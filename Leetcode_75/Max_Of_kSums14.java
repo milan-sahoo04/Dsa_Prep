@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Max_Of_kSums {
+class Max_Of_kSums14 {
     public static int max_k_sum(int nums[], int k) {
         Arrays.sort(nums);
         int s = 0, e = nums.length - 1, count = 0;
