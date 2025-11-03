@@ -24,6 +24,6 @@ class reverseString {
         // System.out.println(new StringBuilder(str).reverse());
 
         // 4
-        // System.out.println(rev(str));
+        System.out.println(rev(str));
     }
 }
