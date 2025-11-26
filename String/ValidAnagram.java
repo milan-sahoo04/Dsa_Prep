@@ -19,10 +19,22 @@ public class ValidAnagram {
         return true;
     }
 
+    public static boolean validAnagram(String s1, String s2) {
+        if (s1.length() != s2.length())
+            return false;
+        char arr[] = s1.toCharArray();
+        char arr1[] = s2.toCharArray();
+        Arrays.sort(arr);
+        Arrays.sort(arr1);
+
+        return Arrays.equals(arr, arr1);
+    }
+
     public static void main(String[] args) {
         String str1 = "car";
-        String str2 = "raac";
+        String str2 = "rat";
 
-        System.out.println(validAna(str1, str2));
+        // System.out.println(validAna(str1, str2));
+        System.out.println(validAnagram(str1, str2));
     }
 }
